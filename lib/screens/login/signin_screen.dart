@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../app/app_routes.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_textfield.dart';
 
@@ -52,7 +53,7 @@ class SignInScreen extends StatelessWidget {
                   const Text("Remember Me"),
                   const Spacer(),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.toNamed(AppRoutes.forgotPassword),
                     child: Text("Forgot Password?", style: TextStyle(color: Colors.blue)),
                   ),
                 ],
@@ -71,9 +72,12 @@ class SignInScreen extends StatelessWidget {
                   const Text("New to Theory Test?"),
                   TextButton(
                     onPressed: () {
-                      // TODO: Go to SignUp
+                      Get.toNamed(AppRoutes.signup);
                     },
-                    child: const Text("Create Account"),
+                    child: TextButton(
+                      onPressed: () => Get.toNamed(AppRoutes.signup),
+                      child: Text("Create Account"),
+                    ),
                   ),
                 ],
               )

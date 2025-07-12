@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sm_technology_assignment/screens/login/forgot_password_screen.dart';
+import 'package:sm_technology_assignment/screens/login/reset_password_screen.dart';
 import 'package:sm_technology_assignment/screens/login/signin_screen.dart';
+import 'package:sm_technology_assignment/screens/login/signup_screen.dart';
+import 'package:sm_technology_assignment/screens/login/verify_code_screen.dart';
 import 'package:sm_technology_assignment/screens/onboarding/onboarding_1.dart';
 import 'package:sm_technology_assignment/screens/onboarding/splash_screen.dart';
 
@@ -21,6 +25,10 @@ class MyApp extends StatelessWidget {
         GetPage(name: AppRoutes.splash, page: () => SplashScreen()),
         GetPage(name: AppRoutes.onboarding, page: () => OnboardingScreen()),
         GetPage(name: AppRoutes.signin, page: () => SignInScreen()),
+        GetPage(name: AppRoutes.signup, page: () => SignUpScreen()),
+        GetPage(name: AppRoutes.forgotPassword, page: () => ForgotPasswordScreen()),
+        GetPage(name: AppRoutes.resetPassword, page: () => ResetPasswordScreen()),
+        GetPage(name: AppRoutes.varifyCode, page: () => VerifyCodeScreen()),
       ],
     );
   }
