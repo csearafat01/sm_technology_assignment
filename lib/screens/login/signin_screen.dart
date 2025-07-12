@@ -61,9 +61,7 @@ class SignInScreen extends StatelessWidget {
               const SizedBox(height: 8),
               CustomButton(
                 label: "Sign In",
-                onPressed: () {
-                  // TODO: Sign-in logic
-                },
+                onPressed: () => Get.toNamed(AppRoutes.enableLocation),
               ),
               const SizedBox(height: 16),
               Row(

@@ -6,7 +6,8 @@ class AppRoutes {
   static const forgotPassword = '/forgot-password';
   static const resetPassword = '/reset-password';
   static const varifyCode = '/verify-code';
-
-
+  static const enableLocation = '/enable-location';
+  static const selectLanguage = '/select-language';
+  static const home = '/home'; // After login
 
 }
